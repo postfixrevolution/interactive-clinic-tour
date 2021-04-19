@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>interactive clinic tour</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="info.css">
+<link rel="stylesheet" href="hoverspot.css">
+<link rel="stylesheet" href="expand.css">
+<link rel="stylesheet" href="hint.css">
+<link rel="stylesheet" href="textoverlay.css">
+<link rel="stylesheet" href="reveal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-front-entrance">
+        <li class="text">Front Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-front-entryway">
+        <li class="text">Front Entryway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-front-desk">
+        <li class="text">Front Desk</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-main-lobby">
+        <li class="text">Main Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-clinic-entrance">
+        <li class="text">Clinic Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-clinic-hallway-entrance">
+        <li class="text">Clinic Hallway Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-clinic-hallway-right">
+        <li class="text">Clinic Hallway, Right</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-ct-simulation-room-view-1">
+        <li class="text">CT Simulation Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="8-ct-simulation-room-view-2">
+        <li class="text">CT Simulation Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-inside-the-ct-simulation-machine">
+        <li class="text">Inside the CT Simulation Machine</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-clinic-hallway-left">
+        <li class="text">Clinic Hallway, Left</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-mens-waiting-room">
+        <li class="text">Men&#39;s Waiting Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-womens-waiting-room">
+        <li class="text">Women&#39;s Waiting Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-linear-accelerator-room-2-hallway-1">
+        <li class="text">Linear Accelerator #2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="14-linear-accelerator-room-2-view-1">
+        <li class="text">Linear Accelerator Room 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="15-linear-accelerator-room-2-view-2">
+        <li class="text">Linear Accelerator Room 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-nurses-station-view-1">
+        <li class="text">Nurse&#39;s Station</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="17-nurses-station-view-2">
+        <li class="text">Nurse&#39;s Station</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-clinic-hallway-far-left">
+        <li class="text">Clinic Hallway, Far Left</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-exam-room">
+        <li class="text">Exam Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-linear-accelerator-room-3-entrance">
+        <li class="text">Linear Accelerator #3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="21-linear-accelerator-room-3-hallway-1">
+        <li class="text">Linear Accelerator Room 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="22-linear-accelerator-room-3-view-1">
+        <li class="text">Linear Accelerator Room 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="23-linear-accelerator-room-3-view-2">
+        <li class="text">Linear Accelerator Room 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-inside-the-linear-accelerator">
+        <li class="text">Inside the Linear Accelerator</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="25-ct-sim-room-exit">
+        <li class="text">CT Simulation Room</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="26-lin-acc-2-exit-1">
+        <li class="text">Linear Accelerator Room 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="27-lin-acc-2-exit-2">
+        <li class="text">Linear Accelerator Room 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" style="display:none" data-id="28-lin-acc-3-exit-1">
+        <li class="text">Linear Accelerator Room 3</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
