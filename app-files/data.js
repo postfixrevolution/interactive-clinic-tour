@@ -144,7 +144,7 @@ var APP_DATA = {
           "yaw": 1.3282506678750234,
           "pitch": 0.20884580505545358,
           "title": "Be Sure to Check In",
-          "text": "lorem ipsum",
+          "text": "<p>Upon arriving, you can speak to any of our receptionists to check in for your appointment. While waiting to be called into the clinic, you'll be able to make use of both the lobby restrooms and waiting room.",
           "type": "info",
           "id": "info1"
         }
@@ -191,15 +191,15 @@ var APP_DATA = {
           "yaw": -0.12247731934865413,
           "pitch": 0.2219258444663037,
           "title": "A Place to Wait",
-          "text": "Family members are encouraged to wait here while their loved ones are being treated.",
-          "type": "hint",
-          "id": "hint1"
+          "text": "The main lobby is open to both patients and family members. Family members are encouraged to wait here while their loved ones are being treated, while patients are only allowed one primary caretaker to accompany them further into the clinic.",
+          "type": "info",
+          "id": "info18"
         },
         {
           "yaw": -2.927734025737159,
           "pitch": 0.19035825638728454,
           "title": "Staying Up to Date",
-          "text": "Lorem Ipsum, news and information about our staff members on rotating display",
+          "text": "The latest updates on clinic events, staff, and even personal patient recovery stories can be seen here. If you have extra time before your appointment, learn more about your clinic by seeing what news pops up on screen.",
           "type": "info",
           "id": "info2"
         }
@@ -317,7 +317,7 @@ var APP_DATA = {
           "yaw": 1.193569587423024,
           "pitch": 0.3547536777243767,
           "title": "Welcome to our clinic interior",
-          "text": "To the right, you can explore the first of our three primary radiation treatment rooms. To the left are the waiting rooms, nurse station, and the remainder of our treatment rooms.",
+          "text": "To the right, you can explore the first of our three primary radiation treatment rooms. To the left are the patient waiting rooms, nurse station, and the remainder of our treatment rooms.",
           "type": "hint",
           "id": "hint2"
         },
@@ -325,7 +325,7 @@ var APP_DATA = {
           "yaw": -0.046704171673255246,
           "pitch": 0.38874616500558545,
           "title": "textoverlay 1",
-          "text": "Waiting Rooms, Nurse Station, Linear Accelerator Rooms #2 &amp; #3, Exam Rooms",
+          "text": "This way:<br>Patient Waiting Rooms,<br>Nurse Station,<br>Linear Accelerator Rooms #2 &amp; #3,<br> Examination Rooms",
           "type": "textoverlay",
           "id": "textoverlay2"
         },
@@ -333,7 +333,7 @@ var APP_DATA = {
           "yaw": 3.0971825286536907,
           "pitch": 0.486510327537232,
           "title": "textoverlay 2",
-          "text": "CT Simulation Room, Clinic Exit",
+          "text": "This way:<br>CT Simulation Room,<br>Clinic Exit",
           "type": "textoverlay",
           "id": "textoverlay3"
         }
@@ -447,7 +447,7 @@ var APP_DATA = {
           "yaw": -1.5093709171972396,
           "pitch": 0.3152537391980914,
           "title": "CT Simulation Dressing Room",
-          "text": "for patients to change into their hospital gowns just prior to simulation",
+          "text": "Prior to their CT Simulation treatment, patients can use this dressing room to change into their hospital gowns. This, alongside the rooms within the patient waiting areas, is one of a handful of places you can change into a hospital gown.",
           "type": "info",
           "id": "info3"
         },
@@ -508,7 +508,7 @@ var APP_DATA = {
           "yaw": -0.5201259459891006,
           "pitch": 0.3394968612332647,
           "title": "Patient Positioning",
-          "text": "Text, Lorem Ipsum",
+          "text": "During your CT simulation treatment, a clinician will be here to help position you properly to receive treatment. They may ask you to lie down a specific way or lift certain limbs, so be sure to let them know if you might have any issues with mobility.",
           "type": "info",
           "id": "info4"
         },
@@ -516,7 +516,7 @@ var APP_DATA = {
           "yaw": 1.8289631782583262,
           "pitch": 0.06283184943089815,
           "title": " ",
-          "text": "Masks, and some information about masks.",
+          "text": "These custom-made masks are made specifically for each individual patient. They are used to help guide the positioning of our machines and tools, almost like a map.",
           "type": "hoverspot",
           "id": "hoverspot4"
         }
@@ -688,7 +688,7 @@ var APP_DATA = {
           "yaw": 2.249641915752825,
           "pitch": 0.2873479299666002,
           "title": "In Need of Extra Assistance?",
-          "text": "Patients are allowed to bring one dedicated caretaker with them into the treatment-specific waiting rooms.",
+          "text": "Patients are allowed to bring one dedicated caretaker with them into the treatment-specific waiting rooms. Other family members or companions can make use of the main lobby's waiting room.",
           "type": "info",
           "id": "info4"
         },
@@ -696,7 +696,7 @@ var APP_DATA = {
           "yaw": -1.8240716751101438,
           "pitch": 0.2752833045258196,
           "title": " ",
-          "text": "Dressing Room for patients.",
+          "text": "Dressing room for patients. In here, patients can change into their hospital gowns.",
           "type": "hoverspot",
           "id": "hoverspot5"
         },
@@ -712,7 +712,7 @@ var APP_DATA = {
           "yaw": -1.0584589170106575,
           "pitch": -0.05047569212939784,
           "title": "Patient Lockers",
-          "text": "A place for patients to put their belongings during their visit.",
+          "text": "The clinic provides a place for patients to put their clothes and other belongings during their visit. If you're in need of a locker, feel free to ask your nurse for a locker key.",
           "type": "hint",
           "id": "hint3"
         }
@@ -758,24 +758,24 @@ var APP_DATA = {
         {
           "yaw": 1.7954333962157465,
           "pitch": 0.39313984252847867,
-          "title": "info, An Extra Set of Hands",
-          "text": "Patients are allowed to bring one designated caretaker with them into the treatment-specific waiting rooms.",
+          "title": "An Extra Set of Hands",
+          "text": "Patients are allowed to bring one designated caretaker with them into the treatment-specific waiting rooms. Other family members or companions can make use of the main lobby's waiting room.",
           "type": "info",
           "id": "info5"
         },
         {
           "yaw": -1.1132209147842502,
           "pitch": 0.2482760640763111,
-          "title": "hover, restroom",
-          "text": "Text",
+          "title": " ",
+          "text": "Patient Restroom",
           "type": "hoverspot",
           "id": "hoverspot7"
         },
         {
           "yaw": -0.19285319768357922,
           "pitch": 0.24574150505074321,
-          "title": "hover, dressing room",
-          "text": "Text",
+          "title": " ",
+          "text": "Dressing room for patients. In here, patients can change into their hospital gowns.",
           "type": "hoverspot",
           "id": "hoverspot8"
         },
@@ -783,7 +783,7 @@ var APP_DATA = {
           "yaw": -2.0926065933357556,
           "pitch": 0.20916874397715013,
           "title": "Patient Lockers",
-          "text": "A place for patients to put their belongings.",
+          "text": "The clinic provides a place for patients to put their clothes and other belongings during their visit. If you're in need of a locker, feel free to ask your nurse for a locker key.",
           "type": "hint",
           "id": "hint4"
         }
@@ -880,7 +880,7 @@ var APP_DATA = {
           "yaw": 2.9409110554642215,
           "pitch": 0.5130279776988864,
           "title": "Moral Support",
-          "text": "While a family member or caretaker can see you into the room, they have to leave once the treatment process begins.",
+          "text": "It's perfectly natural to want a familiar face to accompany you during your visit. While a family member or caretaker can see you into the treatment room, they'll have to leave once the treatment process begins.",
           "type": "expand",
           "id": "expand1"
         }
@@ -927,7 +927,7 @@ var APP_DATA = {
           "yaw": -0.14423503729961595,
           "pitch": 0.3807754144128257,
           "title": "Adjustable Treatment Stations",
-          "text": "The panels that patients lie on during their treatment are automated, letting doctors carefully adjust the stations in order to find the best angles for a patient's treatment.",
+          "text": "The panels that patients lie on during their treatment are automated, letting doctors carefully adjust the height nad position of these stations in order to find the best angles for a patient's treatment.",
           "type": "info",
           "id": "info6"
         },
@@ -935,7 +935,7 @@ var APP_DATA = {
           "yaw": -1.1504446070401837,
           "pitch": 0.13210059544352504,
           "title": "Linear Acceleration",
-          "text": "video? text?",
+          "text": "The x-ray beams emitted by this machine are shaped to conform to a tumor's shape, allowing for minimal radiation exposure while ensuring maximum treatment efficiency.",
           "type": "hint",
           "id": "hint5"
         },
@@ -995,8 +995,8 @@ var APP_DATA = {
         {
           "yaw": -0.39829883654842924,
           "pitch": 0.20818805866321632,
-          "title": "Nurse Station",
-          "text": "Lorem Ipsum, the job or nurses and how they can help.",
+          "title": "Nurse's Station",
+          "text": "While preparing for your radiation treatment session, you're likely to meet with one of our many nurses. They'll be happy to answer questions and help you prepare you for your treatment.",
           "type": "info",
           "id": "info8"
         },
@@ -1061,19 +1061,21 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
+        /*
         {
           "yaw": 0.765849976321185,
           "pitch": 0.2417936876545177,
           "title": "Ask a Nurse",
-          "text": "Our helpful nurses can (probably) answer them.",
+          "text": "You can talk to a working nurse if you have any additional questions about your examination, your current or future treatments, and anything else you're curious about.",
           "type": "expand",
           "id": "expand2"
         },
+        */
         {
           "yaw": 3.0746003191819042,
           "pitch": 0.6459414276252335,
           "title": "textoverlay",
-          "text": "Exam Rooms, Linear Acceleration Room #3, Clinic Exit",
+          "text": "This way:<br>Examination Rooms,<br>Linear Acceleration Room #3,<br>Clinic Exit",
           "type": "textoverlay",
           "id": "textoverlay7"
         }
@@ -1170,7 +1172,7 @@ var APP_DATA = {
           "yaw": 0.2725653981881031,
           "pitch": 0.13265404967719796,
           "title": "Translation and Interpretation",
-          "text": "Live video call connection with an interpreter for all non-English speaking patients.",
+          "text": "This device allows us to connect to an interpreter via live video call for all non-English speaking patients.",
           "type": "info",
           "id": "info9"
         },
@@ -1178,7 +1180,7 @@ var APP_DATA = {
           "yaw": 1.5538135054479785,
           "pitch": 0.34057843797358345,
           "title": "Telemetry Devices",
-          "text": "For recording heart rate, blood pressure, and temperature.",
+          "text": "During your pre-treatment examination session, devices like these will be used to record things such as your heart rate, blood pressure, and body temperature.",
           "type": "info",
           "id": "info10"
         }
@@ -1284,7 +1286,7 @@ var APP_DATA = {
           "yaw": -1.3120229103566778,
           "pitch": 0.046371289351073486,
           "title": "Leaden Doors",
-          "text": "Or is this concrete? Thick doors help to seal this room off, protecting any passersby from excess exposure to the types of radiation used during the treatment process. It's heavy, so try not to get in its way.",
+          "text": "Thick doors help to seal this room off, protecting any passersby from excess exposure to the types of radiation used during the treatment process. It's extremely heavy, so be careful not to get in its way!",
           "type": "info",
           "id": "info11"
         },
@@ -1351,7 +1353,7 @@ var APP_DATA = {
           "yaw": 0.42904480435870695,
           "pitch": -0.02308280074479363,
           "title": "More About Masks",
-          "text": "And more info about these masks! These special nettings are sized to each specific patient, giving our doctors a more uniform way of mapping out exactly where a patient might need to receive treatment.",
+          "text": "These special nettings are sized to each specific patient, giving our doctors a more uniform way of mapping out exactly where a patient might need to receive treatment. In this way, locating a specific treatment area will be similar to finding that same space on a grid.",
           "type": "info",
           "id": "info13"
         }
@@ -1398,7 +1400,7 @@ var APP_DATA = {
           "yaw": -0.9142908932079727,
           "pitch": 0.14080360028966865,
           "title": "X-Ray Imaging",
-          "text": "I think Roa said that these panels on the side allow for simultaneous capturing of images while treatment is administered. Requires confirmation.",
+          "text": "The linear acceleration machine's side paels allow for simultaneous capturing of x-ray images while treatment is administered. The images captured can prove useful to ensure that your treatment is going as planned.",
           "type": "info",
           "id": "info14"
         },
@@ -1406,7 +1408,7 @@ var APP_DATA = {
           "yaw": 3.1014304376688617,
           "pitch": 0.12838641721607402,
           "title": "Full-Body Treatment Table",
-          "text": "possible video? some text about the case of full-body treatment.",
+          "text": "In the event that a patient required full body treatment, this table is used to put enough distance between patient and machine to best let the particle beams reach all affected areas.",
           "type": "hint",
           "id": "hint7"
         }
@@ -1522,7 +1524,7 @@ var APP_DATA = {
           "yaw": -1.4820345688301,
           "pitch": 0.21511171084051028,
           "title": "CT Simulation Dressing Room",
-          "text": "for patients to change into their hospital gowns just prior to simulation",
+          "text": "Prior to their CT Simulation treatment, patients can use this dressing room to change into their hospital gowns. This, alongside the rooms within the patient waiting areas, is one of a handful of places you can change into a hospital gown.",
           "type": "info",
           "id": "info16"
         },
@@ -1681,7 +1683,7 @@ var APP_DATA = {
           "yaw": -1.323429766177867,
           "pitch": 0.16969163701347156,
           "title": "Leaden Doors",
-          "text": "Or is this concrete? Thick doors help to seal this room off, protecting any passersby from excess exposure to the types of radiation used during the treatment process. It's heavy, so try not to get in its way.",
+          "text": "Thick doors help to seal this room off, protecting any passersby from excess exposure to the types of radiation used during the treatment process. It's extremely heavy, so be careful not to get in its way!",
           "type": "info",
           "id": "info17"
         },

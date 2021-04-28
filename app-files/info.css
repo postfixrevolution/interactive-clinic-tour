@@ -139,7 +139,7 @@
   }
 
   .desktop .info .text-box-clicked {
-    width: 300px;
+    width: 250px;
     height: 280px;
     top: -100px;
 
@@ -147,6 +147,8 @@
     
     transition: .5s;
     transition-delay: .4s;
+
+    line-height: 1.25em;
   }
   
   .info:hover {
