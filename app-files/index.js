@@ -572,9 +572,24 @@
   }
 
   // Display the initial scene.
-  switchScene(scenes[0]);
+  var querystring = window.location.search;
+  console.log(querystring);
+  const urlParams = new URLSearchParams(querystring);
+  const sceneurl = urlParams.get('scene')
 
-})();
+  if(sceneurl){
+     var newscene = findSceneById(sceneurl);
+     switchScene(newscene);
+  }
+  else{
+	  // Display the initial scene.
+	  switchScene(scenes[0]);
+  }
+}
+
+
+
+)();
 
 
 function createTextOverlay(hotspot) {
