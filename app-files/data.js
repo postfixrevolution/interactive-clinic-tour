@@ -36,7 +36,16 @@ var APP_DATA = {
           "target": "1-front-entryway"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0.1886117048205883,
+          "pitch": 0.4538043962901773,
+          "title": " ",
+          "text": "Welcome to the UCI Radiation Oncology Clinic! <u>Click and drag</u> to adjust your camera view and explore our clinic from all angles.",
+          "type": "textoverlay",
+          "id": "textoverlay11"
+        }
+      ]
     },
     {
       "id": "1-front-entryway",
@@ -85,7 +94,7 @@ var APP_DATA = {
           "yaw": -0.2763377754469154,
           "pitch": 0.5327575624383147,
           "title": " ",
-          "text": "Welcome to the UCI Radiation Oncology Clinic! Explore our office before your next visit, and be sure to click and hover over all our informative hotspots to learn more about our shared space.",
+          "text": "You've made it to our clinic exterior! Explore our office before your next visit, and be sure to <u>hover or click</u> over all our informative hotspots to learn more about our shared space.",
           "type": "hoverspot",
           "id": "hoverspot1"
         }
@@ -297,7 +306,7 @@ var APP_DATA = {
           "yaw": -1.5762142523711091,
           "pitch": 0.06949137815188067,
           "rotation": 0,
-          "target": "2-front-desk"
+          "target": "4-clinic-entrance"
         },
         {
           "yaw": -0.03524056745671622,
@@ -314,17 +323,25 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
+          "yaw": -1.5872142523711091,
+          "pitch": 0.16949137815188067,
+          "title": "text overlay, clinic exit",
+          "text": "This way:<br>Return to Clinic Entrance",
+          "type": "textoverlay",
+          "id": "textoverlay10"
+        },
+        {
           "yaw": 1.193569587423024,
           "pitch": 0.3547536777243767,
           "title": "Welcome to our clinic interior",
           "text": "To the right, you can explore the first of our three primary radiation treatment rooms. To the left are the patient waiting rooms, nurse station, and the remainder of our treatment rooms.",
-          "type": "hint",
-          "id": "hint2"
+          "type": "info",
+          "id": "info22"
         },
         {
           "yaw": -0.046704171673255246,
           "pitch": 0.38874616500558545,
-          "title": "textoverlay 1",
+          "title": "textoverlay 2",
           "text": "This way:<br>Patient Waiting Rooms,<br>Nurse Station,<br>Linear Accelerator Rooms #2 &amp; #3,<br> Examination Rooms",
           "type": "textoverlay",
           "id": "textoverlay2"
@@ -713,8 +730,8 @@ var APP_DATA = {
           "pitch": -0.05047569212939784,
           "title": "Patient Lockers",
           "text": "The clinic provides a place for patients to put their clothes and other belongings during their visit. If you're in need of a locker, feel free to ask your nurse for a locker key.",
-          "type": "hint",
-          "id": "hint3"
+          "type": "info",
+          "id": "info23"
         }
       ]
     },
@@ -784,8 +801,8 @@ var APP_DATA = {
           "pitch": 0.20916874397715013,
           "title": "Patient Lockers",
           "text": "The clinic provides a place for patients to put their clothes and other belongings during their visit. If you're in need of a locker, feel free to ask your nurse for a locker key.",
-          "type": "hint",
-          "id": "hint4"
+          "type": "info",
+          "id": "info24"
         }
       ]
     },
@@ -881,8 +898,8 @@ var APP_DATA = {
           "pitch": 0.5130279776988864,
           "title": "Moral Support",
           "text": "It's perfectly natural to want a familiar face to accompany you during your visit. While a family member or caretaker can see you into the treatment room, they'll have to leave once the treatment process begins.",
-          "type": "expand",
-          "id": "expand1"
+          "type": "info",
+          "id": "info19"
         }
       ]
     },
@@ -1013,8 +1030,8 @@ var APP_DATA = {
           "pitch": 0.6319558993961198,
           "title": "Weighing In",
           "text": "A scale is built into the floor right by the nurse's station, allowing for quick and easy measurements during the treatment process.",
-          "type": "hint",
-          "id": "hint6"
+          "type": "info",
+          "id": "info25"
         }
       ]
     },
@@ -1586,8 +1603,8 @@ var APP_DATA = {
           "pitch": 0.5130279776988864,
           "title": "Moral Support",
           "text": "While a family member or caretaker can see you into the room, they have to leave once the treatment process begins.",
-          "type": "expand",
-          "id": "expand3"
+          "type": "info",
+          "id": "info21"
         }
 
       ]
@@ -1693,7 +1710,7 @@ var APP_DATA = {
           "title": "In Search of Support",
           "text": "A family member or designated caretaker is able to accompany a patient here, but they will be asked to leave once treatment begins.",
           "type": "info",
-          "id": "info13"
+          "id": "info20"
         }
       ]
     }
