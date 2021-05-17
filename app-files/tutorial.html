@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>interactive clinic tour</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="clinic-bg">
+
+    <div class="tutorial">
+
+        <div class="slideshow-container">
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text">
+                    <p class="tutorial-maintext">Welcome to the Virtual Tour</p>
+                    <p>This is a 360° virtual tour of the UCI Radiology Clinic. This tour exists to familiarize you with the clinic and the various rooms and equipment you may interact with during your time here.</p>
+                </div>
+            </div>
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text">
+                    <p class="tutorial-maintext">During the tour you'll often see icons like these</p>
+                    <p>
+                        <img src="img/infohotspot.png" class="example-spot">
+                        <img src="img/link.png" class="example-spot">
+                        <img src="img/plushotspot.png" class="example-spot">
+                    </p>
+                </div>
+            </div>
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text">
+                    <p class="tutorial-maintext">Tap this icon to get information on specific objects and rooms.</p>
+                    <p><img src="img/tapinfo.png" class="tutorial-img"></p>
+                </div>
+            </div>
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text">
+                    <p class="tutorial-maintext">Tap these icons to navigate the clinic.</p>
+                    <p><img src="img/tapnav.png" class="tutorial-img"></p>
+                </div>
+            </div>
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text"> 
+                    <p class="tutorial-maintext">Touch and drag<br>to look around</p>
+                    <p><img src="img/swipe.png" class="tutorial-img"></p>
+                </div>
+            </div>
+
+            <div class="tutorial-slide fade">
+                <div class="tut-text"> 
+                    <p class="tutorial-maintext">Or tap this icon to enable mobile VR</p>
+                    <p><img src="img/enable.png" class="tutorial-img"></p>
+                    <p></p>
+                </div>
+            </div>
+        
+
+        </div>
+
+        <div class="centered">
+            <p class="tutorial-nav" id="navigation">
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </p>
+
+            <p><button class="tutorial-button skip" id="skip-tutorial" onclick="begintour()">Skip Tutorial</button></p>
+        </div>
+        
+        
+
+    </div>
+    
+    <script src="tutorial.js"></script>
+
+</body>
+</html>

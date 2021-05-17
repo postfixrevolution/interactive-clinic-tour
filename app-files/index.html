@@ -15,8 +15,11 @@
 <link rel="stylesheet" href="reveal.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
-<body class="multiple-scenes ">
+<body class="multiple-scenes">
 
+  <iframe id="tour-tutorial" src="tutorial.html" frameborder="0" class="load-tutorial"></iframe>
+
+  <div id="tour" class="tour">
 <div id="pano"></div>
 
 <div id="sceneList">
@@ -145,10 +148,19 @@
   <h1 class="sceneName"></h1>
 </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
+<div id="autorotateToggle">
+  <img class="icon off" src="img/enable.png">
+  <img class="icon on" src="img/disable.png">
+</div>
+
+<!-- 
+
+<div id="toggleDeviceOrientation">
+  <img class="enable" src="img/enable.png">
+  <img class="disable" src="img/disable.png">
+</div>
+
+-->
 
 <a href="javascript:void(0)" id="fullscreenToggle">
   <img class="icon off" src="img/fullscreen.png">
@@ -178,10 +190,13 @@
 <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
   <img class="icon" src="img/minus.png">
 </a>
+</div>
 
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
+
+<script src="DeviceOrientationControlMethod.js"></script>
 
 <script src="data.js"></script>
 <script src="index.js"></script>

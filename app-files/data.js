@@ -36,16 +36,7 @@ var APP_DATA = {
           "target": "1-front-entryway"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 0.1886117048205883,
-          "pitch": 0.4538043962901773,
-          "title": " ",
-          "text": "Welcome to the UCI Radiation Oncology Clinic! <u>Click and drag</u> to adjust your camera view and explore our clinic from all angles.",
-          "type": "textoverlay",
-          "id": "textoverlay11"
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "1-front-entryway",

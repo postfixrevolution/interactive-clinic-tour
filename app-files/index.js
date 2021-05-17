@@ -70,6 +70,11 @@
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
+  // Register the custom control method.
+  var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
+  var controls = viewer.controls();
+  controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
+
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
     var urlPrefix = "tiles";
@@ -256,13 +261,54 @@
     viewer.setIdleMovement(Infinity);
   }
 
+  // device orientation stuff
+  var enabled = false;
+
+  function requestPermissionForIOS() {
+    window.DeviceOrientationEvent.requestPermission()
+      .then(response => {
+        if (response === 'granted') {
+          enableDeviceOrientation()
+        }
+      }).catch((e) => {
+        console.error(e)
+      })
+  }
+
+  function enableDeviceOrientation() {
+    deviceOrientationControlMethod.getPitch(function (err, pitch) {
+      if (!err) {
+        view.setPitch(pitch);
+      }
+    });
+    controls.enableMethod('deviceOrientation');
+    enabled = true;
+    //autorotateToggleElement.className = 'icon on';
+    autorotateToggleElement.classList.add('enabled');
+  }
+
+  function enable() {
+    if (window.DeviceOrientationEvent) {
+      if (typeof (window.DeviceOrientationEvent.requestPermission) == 'function') {
+        requestPermissionForIOS()
+      } else {
+        enableDeviceOrientation()
+      }
+    }
+  }
+
+  function disable() {
+    controls.disableMethod('deviceOrientation');
+    enabled = false;
+    //autorotateToggleElement.className = 'icon off';
+    autorotateToggleElement.classList.remove('enabled');
+  }
+
   function toggleAutorotate() {
-    if (autorotateToggleElement.classList.contains('enabled')) {
-      autorotateToggleElement.classList.remove('enabled');
-      stopAutorotate();
+    if (enabled) {
+      disable();
     } else {
-      autorotateToggleElement.classList.add('enabled');
-      startAutorotate();
+      enable();
     }
   }
 
@@ -585,6 +631,7 @@
 	  // Display the initial scene.
 	  switchScene(scenes[0]);
   }
+
 }
 
 
